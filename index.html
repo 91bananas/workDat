@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+	<title>Work Dat</title>
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+	<link rel="stylesheet" type="text/css" href="./workout.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.1.0/pure-min.css">
+    <link rel="stylesheet" href="http://purecss.io/combo/1.1.4?/css/main.css&/css/rainbow/baby-blue.css">
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable:no;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+<body>
+
+    <div class="pure-g-r " id="layout">
+        <a href="javascript:void(0);" id="menuLink" class="pure-menu-link">
+            <img src="./menu.png" width="20" alt="Menu toggle">
+        </a>
+
+        <div class="pure-u" id="menu">
+            <div class="pure-menu pure-menu-open">
+                <ul>
+                    <li class="pure-menu-selected ">
+                        <a href="javascript:void(0);" class="nav_links" data-page="profile">Monday</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="nav_links" data-page="locations">Tuesday</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="nav_links" data-page="feed">Thursday</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="nav_links" data-page="feed">Friday</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    	<!--<div class="pure-g-r">
+    		<div class="pure-u-1-5">
+    			<span class="top">Monday</span>
+    			<span class="bottom">Shoulders/Triceps</span>
+			</div>
+    		<div class="pure-u-1-5">
+    			<span class="top">Tuesday</span>
+    			<span class="bottom">Legs/Abs</span>
+			</div>
+    		<div class="pure-u-1-5">
+    			<span class="top">Wednesday</span>
+    			<span class="bottom">Off</span>
+			</div>
+    		<div class="pure-u-1-5">
+    			<span class="top">Thursday</span>
+    			<span class="bottom">Chest/Biceps</span>
+			</div>
+    		<div class="pure-u-1-5">
+    			<span class="top">Friday</span>
+    			<span class="bottom">Back</span>
+			</div>
+		</div>-->
+
+            <div class="header pure-u-1">
+                <h5 class="pure-u-1" id="day">Monday</h5>
+            </div>
+
+            <div class="page_content">
+            	<div id="Monday" class="pure-g-r days active">
+    				<div class="pure-u-1-2">
+    					<h4>Shoulders</h4>
+    					<ul>
+    						<li>
+    							<span class="ex_name">Dumbell Press</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Side Laterals</span>
+    							<span class="reps">4x12</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Front Laterals</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Bent Over Row</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    					</ul>
+    				</div>
+    				<div class="pure-u-1-2">
+    					<h4>Triceps</h4>
+    					<ul>
+    						<li>
+    							<span class="ex_name">Dips</span>
+    							<span class="reps">75</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dumbell Kickbacks</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dumbell Extensions</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    					</ul>
+    				</div>
+            	</div>
+            	<div id="Tuesday" class="pure-g-r days">
+    				<div class="pure-u-1-2">
+    					<h4>Legs</h4>
+    					<ul>
+    						<li>
+    							<span class="ex_name">Dumbell Squats (Sumo)</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dumbell Squats (Narrow)</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dumbell Squats (Neutral)</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Walking Lunges</span>
+    							<span class="reps">4x12</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Stiff Leg Dead Lift</span>
+    							<span class="reps">4x15</span>
+    						</li>
+    					</ul>
+    				</div>
+    				<div class="pure-u-1-2">
+    					<h4>Abs</h4>
+    					<ul>
+    						<li>
+    							<span class="ex_name">Leg Lifts</span>
+    							<span class="reps">60</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Crunches</span>
+    							<span class="reps">150</span>
+    						</li>
+    					</ul>
+    				</div>
+            	</div>
+            	<div id="Thursday" class="pure-g-r days">
+    				<div class="pure-u-1-2">
+    					<h4>Chest</h4>
+    					<ul>
+    						<li>
+    							<span class="ex_name">21 Gun Salutes</span>
+    							<span class="reps">4</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dips</span>
+    							<span class="reps">60</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dumbell Bench Press</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Flyes</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    					</ul>
+    				</div>
+    				<div class="pure-u-1-2">
+    					<h4>Biceps</h4>
+    					<ul>
+    						<li>
+    							<span class="ex_name">Pull Ups</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Hammer Curls</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dumbell Curls</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    					</ul>
+    				</div>
+            	</div>
+            	<div id="Friday" class="pure-g-r days">
+    				<div class="pure-u-1-2">
+    					<h4>Back</h4>
+    					<ul>
+    						<li>
+    							<span class="ex_name">Wide Grip Pull Ups</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Neutral Grip Pull Ups</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dumbell Pull Over</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    						<li>
+    							<span class="ex_name">Dumbell Row</span>
+    							<span class="reps">4x10</span>
+    						</li>
+    					</ul>
+    				</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+    //handle routing pages and
+    $('.nav_links').click(function () {
+        var $this = $(this),
+        	text = $this.text(),
+            $parent = $this.parent(),
+            $day = $('#day'),
+            $layout = $('#layout');
+
+        $('.pure-menu-selected').removeClass('pure-menu-selected');
+        $parent.addClass('pure-menu-selected');
+        $day.html(text);
+        $('#' + text).addClass('active').siblings().removeClass('active');
+        if ($layout.hasClass('active')) {
+            $layout.removeClass('active');
+        }
+    });
+
+    //showy/hidey menu
+    $('#menuLink').click(function () {
+        var $menu = $('#menu'),
+            $layout = $('#layout');
+
+        $menu.toggleClass('active');
+        $layout.toggleClass('active');
+    });
+});
+
+</script>
+</body>
+</html>

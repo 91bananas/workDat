@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 0;
+}
+div.wrap {
+  width: 960px;
+}
+div.days {
+  display: none;
+}
+div.days.active {
+  display: block;
+}
+div.days ul {
+  list-style: none;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+div.days ul li {
+  padding: 7px;
+}
+div.days ul li span.reps {
+  float: right;
+  background: #fafafa;
+  color: #1f8dd6;
+  padding: 4px 8px;
+  -webkit-border-radius: 4px;
+  border: 1px solid #f4f4f4;
+}
+.pure-u-1-2 {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+}
+.header {
+  background: #f9f9f9 !important;
+  padding: .3em !important;
+}
