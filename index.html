@@ -22,16 +22,16 @@
             <div class="pure-menu pure-menu-open">
                 <ul>
                     <li class="pure-menu-selected ">
-                        <a href="javascript:void(0);" class="nav_links" data-page="profile">Monday</a>
+                        <a href="javascript:void(0);" class="nav_links" data-page="Monday">Monday</a>
                     </li>
                     <li class="">
-                        <a href="javascript:void(0);" class="nav_links" data-page="locations">Tuesday</a>
+                        <a href="javascript:void(0);" class="nav_links" data-page="Tuesday">Tuesday</a>
                     </li>
                     <li class="">
-                        <a href="javascript:void(0);" class="nav_links" data-page="feed">Thursday</a>
+                        <a href="javascript:void(0);" class="nav_links" data-page="Thursday">Thursday</a>
                     </li>
                     <li class="">
-                        <a href="javascript:void(0);" class="nav_links" data-page="feed">Friday</a>
+                        <a href="javascript:void(0);" class="nav_links" data-page="Friday">Friday</a>
                     </li>
                 </ul>
             </div>
@@ -213,8 +213,23 @@
     </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
+var storage = false;
+
+if (typeof localStorage === 'object') {
+	Storage.prototype.setObject = function(key, value) {
+		this.setItem(key, JSON.stringify(value));
+	}
+
+	Storage.prototype.getObject = function(key) {
+		var value = this.getItem(key);
+		return value && JSON.parse(value);
+	}
+	storage = true;
+}
 
 $(document).ready(function () {
+
+
     //handle routing pages and
     $('.nav_links').click(function () {
         var $this = $(this),
@@ -230,7 +245,15 @@ $(document).ready(function () {
         if ($layout.hasClass('active')) {
             $layout.removeClass('active');
         }
+		if (storage) {
+			localStorage.setItem('page', $this.attr('data-page'));
+		}
     });
+
+
+	if (storage) {
+		$('[data-page="' + localStorage.getItem('page') + '"]').click();
+	}
 
     //showy/hidey menu
     $('#menuLink').click(function () {
